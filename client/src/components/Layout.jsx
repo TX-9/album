@@ -1,8 +1,10 @@
 import styled from "@emotion/styled"
 import { widths, unit } from "../assets/styles"
+import Header from "../components/Header"
 const Layout = ({ fullWidth, children, grid }) => {
   return (
     <>
+      <Header />
       <PageContaier fullWidth={fullWidth} grid={grid}>
         {children}
       </PageContaier>

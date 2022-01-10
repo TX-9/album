@@ -1,3 +1,4 @@
+import '@apollo/space-kit/reset.css';
 import { colors as SKColors } from '@apollo/space-kit/colors'
 import { Global } from '@emotion/core'
 
@@ -31,14 +32,13 @@ const GlobalStyles = () => (
         margin: 0,
         padding: 0,
         fontFamily: "'Source Sans Pro', sans-serif",
-        // backgroundColor: colors.background,
-        // color: colors.text,
+        backgroundColor: colors.background,
+        color: colors.text,
       },
       '#root': {
         display: 'flex',
         flexDirection: 'column',
-        minHeight: '100%',
-        backgroundImage: 'url("/space_kitty_pattern.png")',
+        minHeight: '100%'
       },
       '*': {
         boxSizing: 'border-box',

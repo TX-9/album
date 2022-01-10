@@ -1,7 +1,11 @@
 import ReactDOM from 'react-dom';
-import Pages from './pages/Pages';
+import GlobalStyles from './assets/styles';
+import Pages from './pages';
 
 ReactDOM.render(
-  <Pages />,
+  <>
+    <GlobalStyles />
+    <Pages />
+  </>,
   document.getElementById('root')
 );
